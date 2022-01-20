@@ -1,0 +1,32 @@
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Section Incontournables */
+.incontournables {
+    text-align: center;
+}
+.tuiles-incontournables {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    margin-top: 2rem;
+}
+    .tuiles-incontournables > * {
+        flex: 1;
+        padding: 0 1rem;
+        flex-basis: 250px;
+        max-width: 300px;
+        margin-bottom: 2rem;
+    }
+    .tuiles-incontournables img {
+        margin-bottom: 1rem;
+        object-fit: cover;
+        height: 230px;
+        width: 100%;
+        object-fit: center;
+    }
