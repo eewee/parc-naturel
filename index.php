@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html>
-    <head>
+    <head>        
         <meta charset="UTF-8" />
         <title>Parc naturel de Brie en Dardet - Charente-Maritime</title>
-        <meta name="description" content="Venez découvrir le Parc Naturel de Brie en Dardet, ouvert toute l'année. Réservez au 05 00 00 00 00" />
+        <meta name="description" content="Venez découvrir le Parc Naturel de Brie en Dardet, ouvert toute l'année. Réservez au 05 00 00 00 00" />              
         <link rel="stylesheet" href="reset.css" />
         <link rel="stylesheet" href="style.css" />
         <meta name="viewport" content="width:device-width, initial-scale=1.0" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700;900&family=Montserrat:wght@300;400;600;700;800;900&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet"> 
     </head>
-    <body>
-        <!-- Haut de page -->
-        <header class="container display-flex">
+    <body class="container">
+        <!-- En-tête du site -->
+        <header class="display-flex">
             <!-- Logo -->
             <a href="#"><img src="images/logo.png" /></a>
-            <div class="nav-container">
+            <div class="menu-contain">
+                <!-- Bloc compte -->
                 <div>
                     <a href="#"><img src="images/compte.png" /></a>
                     <a href="#"><img src="images/shopping-basket.png" /></a>
@@ -24,7 +25,7 @@
                 <!-- Menu principal -->
                 <nav>
                     <ul class="display-flex">
-                        <li><a href="#"><strong>Accueil</strong></a></li>
+                        <li><a href="#">Accueil</a></li>
                         <li><a href="#">A propos</a></li>
                         <li><a href="#">Galerie</a></li>
                         <li><a href="#">Pratique</a></li>
@@ -35,44 +36,47 @@
                 </nav>
             </div>
         </header>
-        <!-- Contenu principal -->
-        <main class="container">
+        <!-- Contenu principal-->
+        <main>
             <!-- Présentation -->
-            <section  class="display-flex">
+            <section class="display-flex">
                 <div>
-                    <h1>Parc Naturel de Brie en Dardet</h1>
-                    <p class="chapo">Chapô - Découvrez les splendeurs d’un parc naturel niché entre la forêt de Vézole et la vallée de l’Arpack</p>
-                    <a class="bouton" href="#">Bouton</a>
-                    <a class="bouton" href="#">Bouton</a>
+                    <h1>Parc naturel de Brie en Dardet</h1>
+                    <p>Chapô - Découvrez les splendeurs d’un parc naturel niché entre la forêt de Vézole et la vallée de l’Arpack</p>
+                    <p><a class="button" href="#">Bouton</a><a class="button" href="#">Bouton</a></p>
                 </div>
                 <div>
                     <img src="images/foret-sequoia-parc-naturel-dardet-charente-maritime.jpg" />
                 </div>
             </section>
             <!-- Incontournables -->
-            <section  class="text-center">
+            <section class="text-center">
                 <h2>Les incontournables du parc</h2>
                 <p>Vous venez pour un court-séjour, découvrez les merveilles naturelles de Brie en Dardet</p>
-                <!-- Tuiles incontournables -->
                 <div class="display-flex">
                     <div>
-                        <img src="images/foret-sequoia-parc-naturel-dardet-charente-maritime.jpg" alt="" />
-                        <h3>La forêt de Séquoia</h3>
-                        <p>La plus grande densité au monde d’arbres millénaires, des arbres de plus de 40 mètres de haut</p>
+                        <img src="images/glacier-ga0a01878a_640.jpg" />
+                        <h3>La forêt de Sequoia</h3>
+                        <p>La plus grande densité au monde d’arbres
+                            millénaires, des arbres de plus de 40
+                            mètres de haut</p>
                     </div>
                     <div>
-                        <img src="images/river-g67ab5751d_640.jpg" alt="" />
-                        <h3>Les Gorges du Dardet</h3>
-                        <p>Au coeur de paysages lunaires, le Dardet a creusé son lit spectaculaire</p>
+                        <img src="images/nature-gda19b88ec_640.jpg" />
+                        <h3>Les gorges du Dardet</h3>
+                        <p>Au coeur de paysages lunaires, le Dardet a
+                            creusé son lit spectaculaire</p>
                     </div>
                     <div>
-                        <img src="images/glacier-gc535eae9b_640.jpg" alt="" />
+                        <img src="images/road-g53d3b1c26_640.jpg" />
                         <h3>Le glacier de Briefane</h3>
-                        <p>Serpentant au fond de la vallée de la Briefane, le glacier haut de 15 mètres s’offre majestueusement au regard</p>
+                        <p>Serpentant au fond de la vallée de la
+                            Briefane, le glacier haut de 15 mètres
+                            s’offre majestueusement au regard</p>
                     </div>
                 </div>
             </section>
-            <!-- Section formulaire -->
+            <!-- Contact -->
             <section class="bkgd-block text-center">
                 <h2>Contactez-nous pour réserver</h2>
                 <p>Laissez-nous vos coordonnées</p>
@@ -103,12 +107,12 @@
                     </div>
                 </form>
             </section>
-            <!-- Section équipe -->
+            <!-- Equipe -->
             <section class="display-flex">
                 <div>
-                    <h2>Rejoignez l’équipe</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consequat dolor quis dui vulputate ultrices. Suspendisse interdum malesuada mauris vel scelerisque. In ac nulla libero.</p>
-                    <p><a href="#">Découvrir nos métiers</a></p>
+                    <h2>L'équipe</h2>
+                    <p>Chapô - vnkjze cmaenbpv vipneazbv</p>
+                    <p><a href="#">Découvrez nos métiers</a></p>
                 </div>
                 <div>
                     <img src="images/young-people-g1b98eb372_640.jpg" />

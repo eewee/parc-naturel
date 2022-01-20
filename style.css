@@ -1,87 +1,10 @@
 /* STYLES DE BASE */
 body {
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
     font-size: 1rem;
-    font-weight: 400;
     line-height: 1.3;
-    color: rgb(0,0,0);
-}
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-img {
-    max-width: 100%;
-    height: auto;
-}
-.text-center {
-    text-align: center;
-}
-/* FLEX */
-.display-flex {
-    display: flex;
-}
-main .display-flex {
-    gap: 2rem;
-}
-main .display-flex > * {
-    flex: 1;
-}
-/* GRID */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 2rem 5%;
-}
-.span-4 {
-    grid-column-end: span 4;
-}
-.span-6 {
-    grid-column-end: span 6;
-}
-.span-12 {
-    grid-column-end: span 12;
-}
-
-
-
-/* HEADER */
-header {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
-    justify-content: space-between;
-    padding-top: 1rem;
-    padding-bottom: 2rem;
-}
-header .nav-container {
-    text-align: right;
-}
-/* Menu navigation */
-    header nav ul {
-        display: flex;
-    }
-    header nav li a {
-        color: #000;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-weight: bold;
-        padding: 12px 20px;
-        display: block;
-        transition: 1s all;
-    }
-    header nav li a:hover, header nav li a:focus {
-        background-color: darkorchid;
-        color: #fff;
-    }
-
-/*** MAIN ***/
-main section {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    font-family: 'Lato', sans-serif;
+    color: #000;
+    font-weight: 400;
 }
 h1, h2, h3, h4 {
     font-family: 'Montserrat', sans-serif;
@@ -114,15 +37,14 @@ h3 {
     font-weight: 700;
     margin-bottom: 1rem;
 }
-h4 {
-    font-size: 18px;
-    font-size: 1.125rem;
-}
-
-main p, main li {
+main p {
     margin-bottom: 1rem;
 }
-main a.button, input[type="submit"] {
+img {
+    max-width: 100%;
+    height: auto;
+}
+a.button, input[type="submit"] {
     background-color: #548F8B;
     color: #fff;
     font-weight: 700;
@@ -132,265 +54,106 @@ main a.button, input[type="submit"] {
     margin-right: 2rem;
     margin-top: 3rem;
     text-decoration: none;
-    border-radius: 0.5rem;
     border: none;
+    transition: all 0.5s;
+    cursor: pointer;
 }
-main a.button:hover, main a.button:focus, input[type="submit"]:hover, input[type="submit"]:focus {
-    background-color: #76b1ad;
+a.button:hover, a.button:focus, input[type="submit"]:hover, input[type="submit"]:focus {
+    border-radius: 0.5rem;
+    background-color: #1e9b56;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.text-center {
+    text-align: center;
+}
+/* FLEX */
+.display-flex {
+    display: flex;
+}
+main .display-flex {
+    gap: 2rem;
+}
+main .display-flex > * {
+    flex: 1;
+}
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 5%;
+}
+.span-6 {
+    grid-column-end: span 6;
+}
+.span-12 {
+    grid-column-end: span 12;
 }
 
-/* Formulaire */
-    form {
-        text-align: left;
-        max-width: 600px;
-        margin: 0 auto;
-    }
-        form label, form input, form textarea {
-            display: block;
-        }
-        form input, form textarea {
-            width: calc(100% - 2.2rem);
-            padding: 1rem;
-        }
-        form input[type="radio"], form label[for="validation"], form input[type="submit"] {
-            display: inline-block;
-            width: auto;
-        }
-        form input[type="submit"] {
-            margin-top: 0;
-            cursor: pointer;
-        }
-        form input[type="checkbox"], form input[type="checkbox"] + label {
-            display: inline-block;
-            width: auto;
-            margin-right: 1rem;
-        }
+/* HEADER */
+header {
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 2rem;
+}
+header .menu-contain {
+    text-align: right;
+}
+header nav ul {
 
-        
+}
+header nav ul a {
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 15px 30px;
+    display: inline-block;
+}
+header nav ul a:hover, header nav ul a:focus {
+    background-color: darkorchid;
+    color: #fff;
+}
+
+/* MAIN */
+section {
+    margin-bottom: 4rem;
+}
+/* Formulaires */
+form {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+form div > * {
+    display: block;
+}
+form input[type="text"], form input[type="email"], form textarea {
+    width: calc(100% - 2.5%);
+    padding: 0.5rem;
+}
+
 /** Mises en forme **/
 .bkgd-block {
     background-color: #e0e0e0;
     padding: 2rem;
 }
-.objectfit {
-    margin-bottom: 1rem;
-    object-fit: cover;
-    height: 230px;
-    width: 100%;
-    object-fit: center;
-}
-strong {
-    font-weight: 900;
-}
-
-/* Section équipe */
-.equipe {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 2rem;
-}
-    .equipe > * {
-        grid-column-end: span 6;
-    }
-    @media screen and (max-width: 900px) {
-        .equipe > * {
-            grid-column-end: span 12;
-        }
-    }
-
-/* PAGE A PROPOS */
-/* Section Activités */
-.activites {
-    text-align: center;
-}
-.tuiles-activites {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-left: -1rem;
-    margin-right: -1rem;
-    margin-top: 2rem;
-}
-    .tuiles-activites > * {
-        flex: 1;
-        padding: 0 1rem;
-        flex-basis: 250px;
-        max-width: 300px;
-        margin-bottom: 2rem;
-    }
-    
-/* Section Les équipes */
-.equipe-a-propos {
-    text-align: center;
-    background-color: #e0e0e0;
-    padding: 3rem;
-}
-.tuiles-equipe-a-propos {
-    display: flex;
-    margin-left: -1rem;
-    margin-right: -1rem;
-}
-    .tuiles-equipe-a-propos > * {
-        flex: 1;
-        padding: 0 1rem;
-    }
-
-    
-/* PAGE SHOP */
-    .liste-shop .tuile-shop-item {
-        border: 2px solid #8c8c8c;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .liste-shop .tuile-shop-item h2:after {
-        margin: 0 auto;
-    }
-    .liste-shop .categorie-shop {
-        position: absolute;
-        z-index: 100;
-        top: 1rem;
-        background-color: #c4c4c4;
-        padding: 1rem 2rem;
-        text-transform: uppercase;
-        font-size: 0.75rem;
-    }
-    .liste-shop .tuile-shop-item-info {
-        padding: 2rem;
-    }
-    .liste-shop .tuile-shop-item-info h2 {
-        text-transform: none;
-        margin-bottom: 1rem;
-    }
-    .liste-shop a {
-        color: #000;
-        font-weight: 700;
-    }
-    .liste-shop .shop-item-price {
-        font-size: 1.5rem;
-        font-weight: 600;
-    }
-    main a.bouton-basket {
-        display: inline-block;
-        margin: 0;
-        background-color: transparent;
-        border: 1px solid #000;
-        color: #000;
-        font-size: 0.85rem;
-        cursor: pointer;
-    }
-    main a.bouton-basket:before {
-        display: inline-block;
-        content: '';
-        background-image: url(images/bouton-basket.png);
-        width: 24px;
-        height: 24px;
-        margin-right: 1rem;
-    }
-
-/*** PAGE PRODUIT ***/
-/* Section produit */
-.produit {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 2rem;
-}
-    .produit > * {
-        grid-column-end: span 6;
-    }
-    @media screen and (max-width: 900px) {
-        .produit > * {
-            grid-column-end: span 12;
-        }
-    }
-    .produit .tuiles-shop-items {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-gap: 2rem;
-    }
-        .produit .tuiles-shop-items > * {
-            grid-column-end: span 4;
-        }
-            .produit .tuile-shop-item {
-                border: 2px solid #8c8c8c;
-                position: relative;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-            }
-            .produit .image-container {
-                position: relative;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-            .produit .categorie-shop {
-                position: absolute;
-                z-index: 100;
-                top: 1rem;
-                background-color: #c4c4c4;
-                padding: 1rem 2rem;
-                text-transform: uppercase;
-                font-size: 0.75rem;
-            }
-            .produit .tuile-shop-item-info {
-                padding: 2rem;
-            }
-            .produit .tuile-shop-item-info h2 {
-                text-transform: none;
-                margin-bottom: 1rem;
-            }
-            .produit a {
-                color: #000;
-                font-weight: 700;
-            }
-            .produit .shop-item-price {
-                font-size: 1.5rem;
-                font-weight: 600;
-            }
-/* Section détails produit */
-
-/* Section équipe */
-.details {
-    margin-top: 5rem;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 2rem;
-    align-items: center;
-}
-    .details > * {
-        grid-column-end: span 6;
-    }
-    @media screen and (max-width: 900px) {
-        .details > * {
-            grid-column-end: span 12;
-        }
-    }
-    .details h2 {
-        margin-bottom: 2rem;
-    }
-    .details ul {
-        margin-left: 1rem;
-    }
-    .details li {
-        list-style-type: disc;
-    }
 
 /* FOOTER */
 footer {
-    font-size: 14px;
-    font-size: 0.875rem;
     text-align: center;
-    padding: 1rem 0;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
-    footer a {
-        color: #000;
-        text-decoration: none;
-        font-weight: 700;
-    }
-    footer a:hover, footer a:focus {
-        text-decoration: underline;
-    }
+footer a {
+    color: #000;
+    font-weight: 700;
+    text-decoration: none;
+}
+footer a:hover, footer a:focus {
+    text-decoration: underline;
+}
